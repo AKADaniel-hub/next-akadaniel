@@ -48,10 +48,10 @@ export default function RootLayout({
             <Link href="/">Home</Link>
             <Link href="/route">Route</Link>
             <Link href="/caracteristicas">Caracteristicas</Link>
+            <Link href="/projetos">Projetos</Link>
           </nav>
 
         </header>
-
 
 
         <main className="
@@ -59,7 +59,8 @@ export default function RootLayout({
         w-[70vw]
         m-3
         p-3
-        min-h-[60vw]
+        min-h-[90vw]
+        rounded-xl
         ">
           {children}
         </main>
