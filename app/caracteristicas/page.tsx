@@ -1,4 +1,6 @@
-export default function page() {
+import Link from "next/link"
+
+export default function caracteristicasPage() {
 
 
     const caracteristicas = [
@@ -20,7 +22,9 @@ export default function page() {
             <p>esta pagina está dentro da rota "/caracteristicas"</p>
 
             {caracteristicas.map((caracteristicas, i) => (
-                <li key={i}>{caracteristicas}</li>
+                <li key={i}>
+                    <Link href={`/caracteristicas/${i}`}>{caracteristicas}</Link>
+                </li>
             ))}
         </>
     )
