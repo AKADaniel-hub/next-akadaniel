@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Caracteristica from "@/components/Caracteristica/Caracteristica";
 
 export default function caracteristicasPage() {
 
@@ -21,9 +22,14 @@ export default function caracteristicasPage() {
             <h2>/caracteristicas</h2>
             <p>esta pagina está dentro da rota "/caracteristicas"</p>
 
-            {caracteristicas.map((caracteristicas, i) => (
+            {caracteristicas.map((caracteristica, i) => (
                 <li key={i}>
-                    <Link href={`/caracteristicas/${i}`}>{caracteristicas}</Link>
+                    <Link href={`/caracteristicas/${i}`}>
+                    <Caracteristica
+                        key={i}
+                        texto={caracteristica} 
+                    />
+                    </Link>
                 </li>
             ))}
         </>
