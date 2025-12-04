@@ -3,6 +3,7 @@ import useSWR from 'swr'
 import Image from 'next/image'
 import { Produto } from '@/models/interfaces'
 
+
 const API = 'https://deisishop.pythonanywhere.com'
 const fetcher = async (url: string) => {
   const res = await fetch(url)
