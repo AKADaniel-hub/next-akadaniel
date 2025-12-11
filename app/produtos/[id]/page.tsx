@@ -85,7 +85,7 @@ export default function Page() {
       <p className="text-sm font-bold">Preço: {produto.price ?? '—'} €</p>
       <p className="text-sm">Avaliação: {produto.rating?.rate ?? '—'}</p>
 
-      <Link href="/produtos" className="text-blue-600 underline">
+      <Link href="/loja" className="text-blue-600 underline">
         ← Voltar
       </Link>
     </main>
