@@ -7,7 +7,6 @@ import Link from 'next/link'
 import { Produto } from '@/models/interfaces'
 import { useEffect, useState } from 'react'
 
-import ProductCard from '@/components/ProductCard/ProductCard'
 
 const API = 'https://deisishop.pythonanywhere.com'
 
